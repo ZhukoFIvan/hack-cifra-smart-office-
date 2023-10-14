@@ -1,0 +1,57 @@
+@keyframes scaleIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+		display: flex;
+	}
+	20% {
+		opacity: 0.2;
+		
+
+	}
+	50% {
+		opacity: 0.2;
+
+	}
+	100% {
+		opacity: 1;
+
+		transform: scale(1);
+	}
+}
+.places {
+	height: 450px;
+	width: 100%;
+	box-shadow: 0px 7px 15px 0px #16151508, 0px 28px 28px 0px #16151508,
+		0px 63px 38px 0px #16151505, 0px 111px 44px 0px #16151500,
+		0px 174px 49px 0px #16151500;
+	z-index: 1;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	z-index: 1;
+
+	flex-wrap: wrap;
+	padding: 60px;
+	justify-content: center;
+	grid-gap: 15px;
+	display: none;
+	transition: all 0.5s ease;
+	
+	&.active {
+		display: flex;
+		animation: scaleIn 0.35s ease-in-out;
+	}
+	.box {
+		background-color: #d3d7d7;
+		width: 40px;
+		height: 40px;
+		border-radius: 8px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+
+		&.active {
+			border:3px solid #2069E0;
+		}
+	}
+}

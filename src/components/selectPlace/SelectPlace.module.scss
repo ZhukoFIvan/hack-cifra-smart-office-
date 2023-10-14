@@ -1,0 +1,22 @@
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	background-color: inherit;
+	outline: none;
+	box-shadow: 0px 7px 15px 0px #16151508, 0px 28px 28px 0px #16151508,
+		0px 63px 38px 0px #16151505, 0px 111px 44px 0px #16151500,
+		0px 174px 49px 0px #16151500;
+
+	font-size: 24px;
+	border-radius: 10px;
+	border: none;
+	width: 100%;
+	
+	align-items: center;
+	cursor: pointer;
+	padding: 15px;
+	margin-bottom: 30px;
+	
+	
+}
+

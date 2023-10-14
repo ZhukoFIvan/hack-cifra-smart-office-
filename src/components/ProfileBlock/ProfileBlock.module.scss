@@ -1,0 +1,47 @@
+.wrapper {
+	box-shadow: 0px 7px 15px 0px #16151508, 0px 28px 28px 0px #16151508,
+		0px 63px 38px 0px #16151505, 0px 111px 44px 0px #16151500,
+		0px 174px 49px 0px #16151500;
+	background-color: white;
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 20px;
+	display: flex;
+	padding: 15px;
+	margin-bottom: 20px;
+
+	.img {
+		width: 120px;
+		height: 120px;
+		margin: auto 0;
+		margin-right: 20px;
+		img {
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.info_block {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.name {
+			font-size: 24px;
+		}
+		.info {
+			font-size: 14px;
+
+			.post {
+				color: blue;
+				line-height: 10px;
+				text-align: left;
+			}
+			.id {
+				color: gray;
+				text-transform: uppercase;
+				text-align: left;
+			}
+		}
+	}
+}
