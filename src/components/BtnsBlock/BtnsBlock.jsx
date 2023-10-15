@@ -10,11 +10,11 @@ const BtnsBlock = ({ title, icon }) => {
 				<h2>Статистика</h2>
 				<img src={icon1} alt='' />
 			</Link>
-			<Link to='take_place' className={styles.wrapper}>
+			<Link to='take-place' className={styles.wrapper}>
 				<h2>Создать бронь</h2>
 				<img src={icon2} alt='' />
 			</Link>
-			<Link to='create_event' className={styles.wrapper}>
+			<Link to='create-event' className={styles.wrapper}>
 				<h2>Создать событие</h2>
 				<img src={icon3} alt='' />
 			</Link>

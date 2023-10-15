@@ -15,8 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='statistic' element={<Statistic />} />
-				<Route path='take_place' element={<TakePlace />} />
-				<Route path='create_event' element={<Event />} />
+				<Route path='take-place' element={<TakePlace />} />
+				<Route path='create-event' element={<Event />} />
 				<Route path='notification' element={<Notification />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>

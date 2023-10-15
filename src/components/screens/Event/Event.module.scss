@@ -1,0 +1,106 @@
+
+@keyframes scaleIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+		display: flex;
+	}
+	20% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 1;
+
+		transform: scale(1);
+	}
+
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	background-color: inherit;
+	outline: none;
+	box-shadow: 0px 7px 15px 0px #16151508, 0px 28px 28px 0px #16151508,
+		0px 63px 38px 0px #16151505, 0px 111px 44px 0px #16151500,
+		0px 174px 49px 0px #16151500;
+
+	font-size: 24px;
+	border-radius: 10px;
+	border: none;
+	width: 100%;
+
+	align-items: center;
+	cursor: pointer;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+.events {
+	height: 100%;
+	width: 100%;
+	box-shadow: 0px 7px 15px 0px #16151508, 0px 28px 28px 0px #16151508,
+		0px 63px 38px 0px #16151505, 0px 111px 44px 0px #16151500,
+		0px 174px 49px 0px #16151500;
+	z-index: 1;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	display: none;
+	flex-direction: column;
+	padding: 30px;
+	transition: all 0.5s ease;
+	.participant{
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+		img{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			margin-right: 15px;
+		}
+		div{
+			font-size: 17px;
+		}
+	}
+	
+	
+
+	&.active {
+		display: flex;
+		animation: scaleIn 0.35s ease-in-out;
+	}
+	div,h3{
+		margin-right: auto;
+	}
+	h3{
+		font-weight: 300;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	.task{
+		text-align: left;
+		line-height: 20px;
+		font-size: 16px;
+	}
+	.reward{
+		display: flex;
+		align-items: center;
+		img{
+			margin-right: 10px;
+		}
+	}
+	button{
+		margin-top: auto;
+		background-color: #2069E0;
+		color:white;
+		font-size: 18px;
+		width: 100%;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		padding: 15px;
+		cursor: pointer;
+	}
+}

@@ -22,6 +22,7 @@ const SelectPlace = ({ name, count, setShow, show, maxCount, id, setIsShow, isSh
 				}}
 			/>
 		</button>
+		
 	)
 }
 
