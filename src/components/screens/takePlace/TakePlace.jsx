@@ -46,7 +46,7 @@ const TakePlace = () => {
 											key={i}
 											onClick={() => onClickPlace(i)}
 											className={cn(styles.box, {
-												[styles.active]: isActive && place == i
+												// [styles.active]: isActive && place == i
 											})}
 										></button>
 									)
