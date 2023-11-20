@@ -15,6 +15,7 @@ const Home = () => {
 		axios
 			.get('http://boldyrev.now.fvds.ru:8080/api/user/abobus@lalka.com')
 			.then(data => setData(data))
+			.catch(error => console.log(error))
 	}, [])
 
 	return (
