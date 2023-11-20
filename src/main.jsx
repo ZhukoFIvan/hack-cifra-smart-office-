@@ -10,7 +10,7 @@ import Auth from '../src/components/screens/auth/Auth'
 import Home from '../src/components/screens/home/Home'
 import Notification from '../src/components/screens/notification/Notification'
 import Shop from '../src/components/screens/shop/Shop'
-import Tovar from '../src/components/screens/tovar/Tovar'
+import Tovar from '../src/components/screens/shop/tovar/Tovar'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
