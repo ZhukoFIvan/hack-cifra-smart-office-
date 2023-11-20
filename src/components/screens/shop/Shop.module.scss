@@ -1,16 +1,19 @@
+@import 'src/assets/styles/variables';
 .shop {
 	display: flex;
 	flex-wrap: wrap;
+	color:white;
+	
 	gap:15px;
 	.item {
 		width: 150px;
 		height: 170px;
 		border-radius: 10px;
-		background-color: #FDFDFD;
+		background-color: $block-color-dark;
 		cursor: pointer;
 		margin-bottom: 15px;
 		text-decoration: none;
-		color:black;
+		color:white;
 		.photo {
 			width: 100%;
 			height: 100px;

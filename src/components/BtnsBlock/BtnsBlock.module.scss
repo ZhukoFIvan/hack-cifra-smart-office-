@@ -1,13 +1,13 @@
 @import 'src/assets/styles/variables';
 .wrapper {
-	background-color: $white;
+	background-color: $block-color-dark;
 	width: 150px;
 	height: 150px;
 	padding: 15px;
 	border-radius: 10px;
 	position: relative;
 	cursor: pointer;
-	color: black;
+	color: white;
 	text-decoration: none;
 	h2{
 		font-weight: 300;

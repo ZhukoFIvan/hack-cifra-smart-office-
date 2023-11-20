@@ -1,10 +1,11 @@
+@import 'src/assets/styles/variables';
 .wrapper {
 	display: flex;
 	justify-content: space-between;
 	background-color: inherit;
 	outline: none;
-	background-color: #FDFDFD;
-
+	background-color: $block-color-dark;
+	color:white;
 	font-size: 24px;
 	border-radius: 10px;
 	border: none;

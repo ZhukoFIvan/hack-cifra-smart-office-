@@ -26,19 +26,19 @@ html,
 body {
 	height: 100%;
 	font-family: 'Ubuntu', sans-serif;
-	background-color: $background-light
+	background-color: $background-light;
 }
 
 body {
 	padding: 0;
 	margin: 0;
-	color: black;
+	color: white;;
 	font-size: 20px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
 	overflow-x: hidden;
-	background-color: $background-light;
+	background-color: $background-dark;
 	&.dark {
 		color:$white;
 		background-color: $background-dark;
@@ -56,6 +56,7 @@ img {
 
 #root {
 	height: 100%;
+	background-color: $background-dark;
 }
 .wrapper-inner-page {
 	padding: 40px 30px;

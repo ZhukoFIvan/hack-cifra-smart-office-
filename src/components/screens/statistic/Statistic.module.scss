@@ -1,5 +1,6 @@
+@import 'src/assets/styles/variables';
 .chart {
-	background-color: #FDFDFD;
+	background-color: $block-color-dark;
 
 	width: 100%;
 	height: 250px;
@@ -17,14 +18,14 @@
 	gap: 20px;
 	justify-content: center;
 	.block {
-		background-color: #FDFDFD;
+		background-color: $block-color-dark;
 		width: 150px;
 		height: 150px;
 		padding: 15px;
 		border-radius: 10px;
 		position: relative;
 
-		color: black;
+		color: white;
 		text-decoration: none;
 		span {
 			font-weight: 500;

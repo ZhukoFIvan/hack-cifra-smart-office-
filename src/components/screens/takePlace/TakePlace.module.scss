@@ -1,3 +1,4 @@
+@import 'src/assets/styles/variables';
 @keyframes scaleIn {
 	0% {
 		opacity: 0;
@@ -22,7 +23,7 @@
 .places {
 	min-height: 450px;
 	width: 100%;
-	background-color: #FDFDFD;
+	background-color: $block-color-dark;
 	z-index: 1;
 	margin-bottom: 20px;
 	border-radius: 10px;
@@ -64,6 +65,8 @@
 	height: 200px;
 	display: none;
 	padding: 20px;
+	color:white;
+	background-color: $background-dark;
 	
 	>button{
 		background-color: #2069E0;
@@ -82,6 +85,8 @@
 		justify-content: space-between;
 		align-items: center;
 		margin: 40px 0;
+		
+
 		button{
 			background-color: #2069E0;
 			border:none;
@@ -92,6 +97,7 @@
 			font-size: 16px;
 			font-weight: 500px;
 			cursor: pointer;
+			display: block;
 		}
 		.line{
 			width: 100%;
@@ -101,6 +107,9 @@
 	}
 	&.show {
 		display: block;
+		background-color: $background-dark;
+		
+		
 	}
 	
 }

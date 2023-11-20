@@ -1,7 +1,7 @@
 @import '/src/assets/styles/variables';
 .wrapper {
 	display: flex;
-
+	background-color: $background-dark;
 	flex-direction: column;
 
 	height: 100%;
@@ -12,7 +12,6 @@
 	margin: 0 auto;
 
 
-
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -20,9 +19,6 @@
 	&.otherPage {
 		height: 200px;
 		border-radius: 0 0 20px 20px;
-
-
-		
 	}
 }
 
@@ -31,7 +27,6 @@
 	color: $white;
 	font-size: 30px;
 	text-align: center;
-	
+
 	font-weight: bold;
-	
 }
