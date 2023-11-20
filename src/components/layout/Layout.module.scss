@@ -1,3 +1,4 @@
+@import '/src/assets/styles/variables';
 .wrapper {
 	display: flex;
 
@@ -9,7 +10,7 @@
 
 	padding: 25px;
 	margin: 0 auto;
-	background-color: white;
+
 
 
 	background-repeat: no-repeat;
@@ -27,7 +28,7 @@
 
 .heading {
 	text-transform: uppercase;
-	color: white;
+	color: $white;
 	font-size: 30px;
 	text-align: center;
 	

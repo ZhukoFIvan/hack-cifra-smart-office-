@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import '/src/assets/styles/variables';
 * {
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	
 	
 
 	&:before,
@@ -24,6 +26,7 @@ html,
 body {
 	height: 100%;
 	font-family: 'Ubuntu', sans-serif;
+	background-color: $background-light
 }
 
 body {
@@ -35,6 +38,11 @@ body {
 	position: relative;
 	line-height: 1.65;
 	overflow-x: hidden;
+	background-color: $background-light;
+	&.dark {
+		color:$white;
+		background-color: $background-dark;
+	}
 }
 
 img {

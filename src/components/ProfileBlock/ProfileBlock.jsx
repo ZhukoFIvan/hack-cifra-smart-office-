@@ -5,7 +5,7 @@ const ProfileBlock = ({data}) => {
 		<img src="/public/2023-10-11 00.19.56.jpg" alt="profile" />
 	</div>
 	<div className={styles.info_block}>
-		<div className={styles.name}>Ващенко Дарья</div>
+		<div className={styles.name}>{data.data?.name}</div>
 		<div className={styles.info}>
 			<div className={styles.post}>Администратор</div>
 			<div className={styles.id}>ID:1748711294</div>

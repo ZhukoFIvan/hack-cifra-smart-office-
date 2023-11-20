@@ -4,8 +4,7 @@ const Header = ({ heading = '', icon, page }) => {
 	return (
 		<section className={styles.wrapper}>
 			<h1>{heading}</h1>
-			<Link to={page}> 
-				
+			<Link to={page}>
 				<img src={icon} alt='icon' />
 			</Link>
 		</section>

@@ -10,11 +10,8 @@ import { animated, useSpring } from 'react-spring'
 import Header from '../..//layout/header/Header'
 import Layout from '../../layout/Layout'
 import styles from './Statistic.module.scss'
+import { months, values } from './chart.data'
 import icon from '/public/home.svg'
-import {values, months} from './chart.data'
-
-
-
 
 const AnimatedNumber = ({ value }) => {
 	const props = useSpring({
@@ -69,24 +66,23 @@ export const options = {
 // }
 const Statistic = () => {
 	return (
-		
 		<Layout>
-
-			
 			<Header heading='Статистика' icon={icon} page={'/'} />
 
 			<div className={styles.chart}>
-				<Bar options={options} data={{
-					labels: months.map(item=>item.name),
-					datasets:[
-						{
-							label: 'hours',
-							data: values.map((item)=>item.value),
-							backgroundColor: 'RGB(32, 105, 224)'
-						}
-
-					]
-				}} />
+				<Bar
+					options={options}
+					data={{
+						labels: months.map(item => item.name),
+						datasets: [
+							{
+								label: 'hours',
+								data: values.map(item => item.value),
+								backgroundColor: 'RGB(32, 105, 224)'
+							}
+						]
+					}}
+				/>
 			</div>
 			<section className={styles.stat}>
 				<div className={styles.block}>

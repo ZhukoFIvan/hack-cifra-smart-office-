@@ -1,9 +1,12 @@
 import { BsChevronDown } from 'react-icons/bs'
 import styles from './SelectPlace.module.scss'
-const SelectPlace = ({ name, count, setShow, show, maxCount, id, setIsShow, isShow }) => {
+const SelectPlace = ({ name, count, setShow, show, maxCount, id, setIsShow, isShow, isActive, setIsActive }) => {
 	const onClickArea = id => {
 		setShow(id)
 		setIsShow(!isShow)
+		{isActive && setIsActive(!isActive)}
+		
+		
 	}
 
 	return (
