@@ -13,8 +13,9 @@ const Home = () => {
 
 	useEffect(() => {
 		axios
-			.get('https://64ef9dfa219b3e2873c4b4cf.mockapi.io/')
+			.get('https://64ef9dfa219b3e2873c4b4cf.mockapi.io/items')
 			.then(data => setData(data))
+
 
 	}, [])
 
