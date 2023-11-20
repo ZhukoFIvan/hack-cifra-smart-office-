@@ -13,9 +13,9 @@ const Home = () => {
 
 	useEffect(() => {
 		axios
-			.get('http://boldyrev.now.fvds.ru:8080/api/user/abobus@lalka.com')
+			.get('https://64ef9dfa219b3e2873c4b4cf.mockapi.io/')
 			.then(data => setData(data))
-			.catch(error => console.log(error))
+
 	}, [])
 
 	return (
