@@ -8,7 +8,7 @@ import Statistic from '../src/components/screens/statistic/Statistic'
 import TakePlace from '../src/components/screens/takePlace/TakePlace'
 import Auth from '../src/components/screens/auth/Auth'
 import Home from '../src/components/screens/home/Home'
-import Notification from '../public/notifications/Notification'
+import Notification from '../src/components/screens/notification/Notification'
 import Shop from '../src/components/screens/shop/Shop'
 import Tovar from '../src/components/screens/tovar/Tovar'
 
