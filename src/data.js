@@ -6,7 +6,7 @@ export const Areas =[
 		currentCount: 6,
 		maxCount:16,
 
-	}
+	},
 
 	// {
 	// 	id:2,
@@ -19,7 +19,7 @@ export const Areas =[
 	// 	name: 'LoungeArea',
 	// 	currentCount: 5,
 	// 	maxCount:20
-	// },
+	// }
 	// {
 	// 	id:4,
 	// 	name: 'UsualArea',

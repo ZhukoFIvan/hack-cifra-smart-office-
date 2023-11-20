@@ -13,7 +13,7 @@ const Home = () => {
 
 	useEffect(() => {
 		axios
-			.get('http://boldyrev.now.fvds.ru:80/api/user/abobus@lalka.com')
+			.get('http://boldyrev.now.fvds.ru:8080/api/user/abobus@lalka.com')
 			.then(data => setData(data))
 	}, [])
 

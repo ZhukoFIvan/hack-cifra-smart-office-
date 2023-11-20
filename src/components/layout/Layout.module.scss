@@ -4,13 +4,11 @@
 	background-color: $background-dark;
 	flex-direction: column;
 
-	height: 100%;
-	max-width: 375px;
-	width: 100%;
+	min-height: 100vh;
+	width: 375px;
 
 	padding: 25px;
 	margin: 0 auto;
-
 
 	background-repeat: no-repeat;
 	background-size: cover;

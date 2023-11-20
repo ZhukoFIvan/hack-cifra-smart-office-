@@ -6,6 +6,7 @@ import SelectPlace from '../../selectPlace/SelectPlace'
 import styles from './TakePlace.module.scss'
 import home from '/public/home.svg'
 import { Areas, Reserved } from '/src/data.js'
+
 const TakePlace = () => {
 	const [isShow, setIsShow] = useState(false)
 	const [place, setPlace] = useState(0)
@@ -56,7 +57,7 @@ const TakePlace = () => {
 							</div>
 							<section
 								className={cn(styles.info, {
-									[styles.show]: isActive 
+									[styles.show]: isActive
 								})}
 							>
 								<div>Время брони</div>
@@ -71,6 +72,7 @@ const TakePlace = () => {
 					)
 				})}
 			</Layout>
+
 		</>
 	)
 }
