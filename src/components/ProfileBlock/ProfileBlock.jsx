@@ -5,7 +5,7 @@ const ProfileBlock = ({data}) => {
 		<img src="/public/avatar.png" alt="profile" />
 	</div>
 	<div className={styles.info_block}>
-		<div className={styles.name}>{data.data?.memory}</div>
+		<div className={styles.name}>{data.data?.name}</div>
 		<div className={styles.info}>
 			<div className={styles.post}>Администратор</div>
 			<div className={styles.id}>ID:1748711294</div>
