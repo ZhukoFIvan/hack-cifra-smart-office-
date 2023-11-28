@@ -39,7 +39,7 @@ body {
 	margin: 0;
 	color: white;;
 	font-size: 20px;
-	min-width: 320px;
+
 	position: relative;
 	line-height: 1.65;
 	overflow-x: hidden;
@@ -61,7 +61,8 @@ img {
 }
 
 #root {
-	height: 100vh;
+	// height: 100vh;
+
 	background-color: $background-dark;
 
 }

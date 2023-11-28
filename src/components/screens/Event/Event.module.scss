@@ -16,7 +16,6 @@
 
 		transform: scale(1);
 	}
-
 }
 .wrapper {
 	display: flex;
@@ -24,7 +23,7 @@
 	background-color: inherit;
 	outline: none;
 	background-color: $block-color-dark;
-	color:white;
+	color: white;
 
 	font-size: 24px;
 	border-radius: 10px;
@@ -47,51 +46,50 @@
 	flex-direction: column;
 	padding: 30px;
 	transition: all 0.5s ease;
-	.participant{
+	.participant {
 		display: flex;
 		align-items: center;
 		margin-top: 10px;
-		img{
+		img {
 			width: 20px;
 			height: 20px;
 			border-radius: 50%;
 			margin-right: 15px;
 		}
-		div{
+		div {
 			font-size: 17px;
 		}
 	}
-	
-	
 
 	&.active {
 		display: flex;
 		animation: scaleIn 0.35s ease-in-out;
 	}
-	div,h3{
+	div,
+	h3 {
 		margin-right: auto;
 	}
-	h3{
+	h3 {
 		font-weight: 300;
 		margin-top: 20px;
 		margin-bottom: 15px;
 	}
-	.task{
+	.task {
 		text-align: left;
 		line-height: 20px;
 		font-size: 16px;
 	}
-	.reward{
+	.reward {
 		display: flex;
 		align-items: center;
-		img{
+		img {
 			margin-right: 10px;
 		}
 	}
-	button{
+	button {
 		margin-top: 20px;
-		background-color: #2069E0;
-		color:white;
+		background-color: #2069e0;
+		color: white;
 		font-size: 18px;
 		width: 100%;
 		border-radius: 10px;
@@ -100,4 +98,18 @@
 		padding: 10px 15px;
 		cursor: pointer;
 	}
+}
+.line {
+	height: 2px;
+	width: 100%;
+	background-color: $white;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.create {
+	background-color: $block-color-dark;
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	border-radius: 10px;
 }

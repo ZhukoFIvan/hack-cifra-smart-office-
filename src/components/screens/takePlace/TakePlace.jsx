@@ -44,14 +44,16 @@ const TakePlace = () => {
 							>
 								{Reserved.map(item => {
 									return (
-										<button
-											onClick={() => onClickPlace(item.id)}
-											key={item.id}
-											className={cn(styles.box, {
-												[styles.active]: item.isReserved,
-												[styles.active2]: item.id === place && isActive
-											})}
-										></button>
+										
+											<button
+												onClick={() => onClickPlace(item.id)}
+												key={item.id}
+												className={cn(styles.box, {
+													[styles.active]: item.isReserved,
+													[styles.active2]: item.id === place && isActive
+												})}
+											></button>
+											
 									)
 								})}
 							</div>
@@ -72,7 +74,6 @@ const TakePlace = () => {
 					)
 				})}
 			</Layout>
-
 		</>
 	)
 }

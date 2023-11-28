@@ -4,12 +4,12 @@ import alert from '/public/alert.svg'
 export const data = [
 	{
 		_id: '1',
-		title: 'Notification 1',
+		title: 'Проверьте вашу почту',
 		icon: info
 	},
 	{
 		_id: '2',
-		title: 'Notification 2',
+		title: 'Пойти на демо дей',
 		icon: info
 	},
 	{

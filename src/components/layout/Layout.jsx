@@ -1,6 +1,6 @@
 import styles from './Layout.module.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({ children}) => {
 	return (
 		<section className={styles.wrapper}>
 			{/* <Header/> */}

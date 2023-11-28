@@ -1,0 +1,12 @@
+.slick-slide > div{
+	background-color: #202123;
+	margin: 0 10px;
+	padding: 8px;
+	border-radius: 50%;
+	cursor: pointer;
+
+}
+.slick-list{
+	margin: 0 -10px;
+	margin-top: 20px;
+}

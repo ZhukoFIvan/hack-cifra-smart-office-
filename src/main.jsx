@@ -11,6 +11,7 @@ import Home from '../src/components/screens/home/Home'
 import Notification from '../src/components/screens/notification/Notification'
 import Shop from '../src/components/screens/shop/Shop'
 import Tovar from '../src/components/screens/shop/tovar/Tovar'
+import Profile from './components/screens/profile/Profile'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 				<Route path='create-event' element={<Event />} />
 				<Route path='notification' element={<Notification />} />
 				<Route path='auth' element={<Auth />} />
+				<Route path='profile' element={<Profile />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</BrowserRouter>

@@ -4,15 +4,15 @@ import Header from '../../layout/header/Header'
 import styles from './Shop.module.scss'
 import { shop } from './shop.data.js'
 import home from '/public/home.svg'
-
+import coin from '/public/blue_coin.svg'
 const Shop = () => {
 	return (
 		<Layout>
-			<Header heading='Shop' page='/' icon={home} />
+			<Header heading='Магазин' page='/' icon={home} />
 			<section className={styles.shop}>
 				{shop.map(value => {
 					return (
-						<Link key={value.id} className={styles.item} to={`tovar/${value.id}`}>
+						<div key={value.id} className={styles.item} to={`tovar/${value.id}`}>
 							<img
 								className={styles.photo}
 								src={value.imgUrl}
@@ -21,12 +21,12 @@ const Shop = () => {
 							<div className={styles.info}>
 								<div className={styles.name}>{value.name}</div>
 								<div className={styles.price}>
-									<img src='/public/blue_coin.svg' alt='coin' />
+									<img src={coin} alt='coin' />
 									<div>{value.price} coins</div>
 									
 								</div>
 							</div>
-						</Link>
+						</div>
 					)
 				})}
 			</section>

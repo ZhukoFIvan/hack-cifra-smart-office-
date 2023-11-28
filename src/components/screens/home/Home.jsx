@@ -2,33 +2,38 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import BtnsBlock from '../../BtnsBlock/BtnsBlock'
 import ProfileBlock from '../../ProfileBlock/ProfileBlock'
+import Skeleton from '../../ProfileBlock/Skeleton'
 import Layout from '../../layout/Layout'
 import Header from '../../layout/header/Header'
 import styles from './Home.module.scss'
 import notification from '/public/notification.svg'
-import { ThemeContext } from '../../../providers/ThemeProvider'
 
 const Home = () => {
 	const [data, setData] = useState([])
+	const [isLoading, setIsLoading] = useState(true)
 
 	useEffect(() => {
-		axios
-			.get('http://boldyrev.now.fvds.ru:8080/api/user/abobus@lalka.com')
-			.then(data => setData(data))
-
+		
+		setTimeout(() => setIsLoading(false), 1000)
 	}, [])
 
 	return (
 		<>
+			<Layout >
+				<Header
+					heading='Главная'
+					icon={notification}
+					page={'/notification'}
+					balance={data.data?.balance}
+					isLoading={isLoading}
+				/>
+				{isLoading ? <Skeleton /> : <ProfileBlock data={data} />}
 
-			<Layout>
-				<Header heading='MISIS' icon={notification} page={'/notification'} />
-				<ProfileBlock data={data} />
+
 				<section className={styles.btns}>
 					<BtnsBlock />
 				</section>
 			</Layout>
-
 		</>
 	)
 }

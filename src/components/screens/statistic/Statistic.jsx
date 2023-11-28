@@ -12,6 +12,8 @@ import Layout from '../../layout/Layout'
 import styles from './Statistic.module.scss'
 import { months, values } from './chart.data'
 import icon from '/public/home.svg'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 const AnimatedNumber = ({ value }) => {
 	const props = useSpring({
@@ -19,6 +21,8 @@ const AnimatedNumber = ({ value }) => {
 		to: { number: value },
 		config: { duration: 1000 }
 	})
+	
+
 
 	return (
 		<animated.span>
@@ -51,23 +55,15 @@ export const options = {
 	borderRadius: 10,
 	borderSkipped: false
 }
-
-// const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
-
-// export const data = {
-// 	labels,
-// 	datasets: [
-// 		{
-// 			label: 'Количество часов',
-// 			data: values.map((value) => 1000),
-// 			backgroundColor: 'RGB(32, 105, 224)'
-// 		}
-// 	]
-// }
 const Statistic = () => {
+	const [data, setData] = useState([])
+	useEffect(() => {
+	
+			
+	}, [])
 	return (
 		<Layout>
-			<Header heading='Статистика' icon={icon} page={'/'} />
+			<Header heading='Статистика' icon={icon} page={'/'}/>
 
 			<div className={styles.chart}>
 				<Bar
@@ -94,11 +90,11 @@ const Statistic = () => {
 					<div>Событий</div>
 				</div>
 				<div className={styles.block}>
-					<AnimatedNumber value={99} />
+					<AnimatedNumber value={43} />
 					<div>Выпитого кофе</div>
 				</div>
 				<div className={styles.block}>
-					<AnimatedNumber value={452} />
+					<AnimatedNumber value={120} />
 					<div>Дней в компании</div>
 				</div>
 			</section>
